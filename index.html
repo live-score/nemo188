@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Live Score Nemo188 | Livescore Bola Tercepat</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon-nemo188.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description"
+		content="Dapatkan informasi hasil pertandingan sepak bola secara lengkap dengan berbagai jadwal pertandingan sepak bola di seluruh negara." />
+	<link rel="canonical" href="index.html">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.html">
+	<link rel="preload" href="https://www.scorebat.com/embed/embed27f1.js?v=arrv">
+	<style type="text/css">
+		#sidebar li {
+			cursor: pointer;
+			padding: 5px;
+		}
+
+		#sidebar li:hover {
+			background: #e3e6e9;
+		}
+
+		.topnav {
+			background-color: #03364b;
+			overflow: hidden;
+		}
+
+		/* Style the links inside the navigation bar */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		/* Add an active class to highlight the current page */
+		.active {
+			background-color: #04AA6D;
+			color: white;
+		}
+
+		/* Hide the link that should open and close the topnav on small screens */
+		.topnav .icon {
+			display: none;
+		}
+
+		/* Dropdown container - needed to position the dropdown content */
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		/* Style the dropdown button to fit inside the topnav */
+		.dropdown .dropbtn {
+			font-size: 17px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		/* Style the dropdown content (hidden by default) */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		/* Style the links inside the dropdown */
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		/* Add a dark background on topnav links and the dropdown button on hover */
+		.topnav a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: #03364b;
+			color: white;
+		}
+
+		/* Add a grey background to dropdown links on hover */
+		.dropdown-content a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+		@media screen and (max-width: 600px) {
+
+			.topnav a:not(:first-child),
+			.dropdown .dropbtn {
+				display: none;
+			}
+
+			.topnav a.icon {
+				float: right;
+				display: block;
+			}
+		}
+
+		/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+		@media screen and (max-width: 600px) {
+			.topnav.responsive {
+				position: sticky;
+			}
+
+			.topnav.responsive a.icon {
+				position: sticky;
+				right: 0;
+				top: 0;
+			}
+
+			.topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+
+			.topnav.responsive .dropdown {
+				float: none;
+			}
+
+			.topnav.responsive .dropdown-content {
+				position: relative;
+			}
+
+			.topnav.responsive .dropdown .dropbtn {
+				display: block;
+				width: 100%;
+				text-align: left;
+			}
+		}
+
+		@media screen and (max-width: 700px) {
+			.btn {
+				width: 32vw;
+				height: 10vw;
+				color: #fff;
+				display: inline-block;
+				border-radius: 8px;
+				border: 2px solid;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: bold;
+				font-size: 4vw;
+				text-shadow: 0 1px 5px rgba(0, 0, 0, .75);
+				background-color: #03364b;
+				animation: 2s ease-in-out infinite colorchange;
+				margin: 0.1vw;
+			}
+
+			.logo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		@media screen and (min-width: 701px) {
+			.btn {
+				width: 32vw;
+				height: 5vh;
+				color: #fff;
+				display: inline-block;
+				border-radius: 8px;
+				border: 2px solid;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: bold;
+				font-size: 3vh;
+				text-shadow: 0 1px 5px rgba(0, 0, 0, .75);
+				background-color: #03364b;
+				animation: 2s ease-in-out infinite colorchange;
+				margin: 0.1vw;
+			}
+		}
+
+		.btn:hover {
+			background-color: #66fcf0;
+			border-color: #66fcf0;
+			color: #fff;
+		}
+
+
+		@keyframes colorchange {
+
+			0%,
+			100% {
+				background: #000000;
+			}
+
+			50% {
+				background: #66fcf0;
+			}
+		}
+
+		.fixed-top {
+			position: sticky;
+			top: 0;
+		}
+
+		.fixed-bottom {
+			position: sticky;
+			bottom: 0;
+		}
+
+		.bg-light {
+			background-color: #03364b;
+			margin: 0;
+		}
+
+		.button-menu {
+			display: flex;
+			justify-content: space-evenly;
+			background-color: #03364b;
+			padding: 10px 0px;
+		}
+
+		.right-aligned {
+			position: absolute;
+			right: 0;
+			top: 0.5vh;
+		}
+	</style>
+</head>
+
+<body class="bg-light">
+	<div class="topnav fixed-top" id="myTopnav">
+		<div class="logo">
+			<a href="https://wajibnew.com//nemo1">
+				<img src="assets/logo-nemo188.webp" width="auto" height="30" class="d-inline-block align-top" alt="">
+			</a>
+			<div class="right-aligned">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+		</div>
+		<a onclick="showLeague('england-premier-league')" class="d-md-none">
+			<div style="display:flex;">
+				<img src="assets/epl.png" style="width:30px;">
+				<div
+					style="color: white;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+					Premiere League</div>
+			</div>
+		</a>
+		<a onclick="showLeague('spain-la-liga')" class="d-md-none">
+			<div style="display:flex;">
+				<img src="assets/laliga.png" style="width:30px;">
+				<div
+					style="color: white;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+					La Liga</div>
+			</div>
+		</a>
+		<a onclick="showLeague('italy-serie-a')" class="d-md-none">
+			<div style="display:flex;">
+				<img src="assets/seriea.png" style="width:30px;">
+				<div
+					style="color: white;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+					Series A</div>
+			</div>
+		</a>
+		<a onclick="showLeague('germany-bundesliga')" class="d-md-none">
+			<div style="display:flex;">
+				<img src="assets/bundesliga.png" style="width:30px;">
+				<div
+					style="color: white;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+					Bundesliga</div>
+			</div>
+		</a>
+		<a onclick="showLeague('france-ligue-1')" class="d-md-none">
+			<div style="display:flex;">
+				<img src="assets/ligue1A.png" style="width:30px;">
+				<div
+					style="color: white;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+					Ligue 1</div>
+			</div>
+		</a>
+		<a onclick="showLeague('indonesia-liga-1')" class="d-md-none">
+			<div style="display:flex;">
+				<img src="assets/89.png" style="width:30px;">
+				<div
+					style="color: white;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+					Indonesia League</div>
+			</div>
+		</a>
+	</div>
+	<div class="container d-md-flex align-items-stretch">
+		<div id="content" class="p-4 p-md-5 pt-5">
+			<div id="header" style="padding:0;">
+				<div>
+					<a href="https://wajibnew.com//nemo1" target="_blank" rel="noopener"
+						style="height:100%; width:100%; margin: 0">
+						<picture>
+							<source media="(min-width:701px)" srcset="assets/slider2.jpg">
+							<source media="(min-width:0px)" srcset="assets/slider1.jpg">
+							<img src="assets/slider2.jpg" width="100%">
+						</picture>
+					</a>
+				</div>
+			</div>
+
+			<iframe frameborder="0" scrolling="no"
+				src=" https://www.scorebat.com/embed/livescore/?token=MzI4NzdfMTY2ODQxMTM3NF8zYmUzYWViYzNkYWE4NTIxMjU4MjVkNmU0NWUwNzYwZjJiN2RkZDE3"
+				allowfullscreen="false" allow="autoplay; fullscreen"
+				style="width:100%;height:9999px;overflow:visible;display:block;"
+				class="_scorebatEmbeddedPlayer_"></iframe>
+
+			<script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed27f1.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+		</div>
+		<div class="button-menu fixed-bottom">
+			<a href="https://wajibnew.com//nemo1"><button type="login" class="btn">LOGIN</button></a>
+			<a href="https://wajibnew.com//nemo2"><button type="login" class="btn">DAFTAR</button></a>
+			<a href="https://wajibnew.com//nemo3"><button type="login" class="btn">LINK ALT</button></a>
+		</div>
+		<!--
+		<nav id="sidebar">
+			<div style="position:fixed;">
+				<h5>TOP LEAGUES</h5>
+				<ul class="list-unstyled components mb-5">
+					<li onclick="showLeague('england-premier-league')" style="display: flex;" class="mb-3">
+						<img src="assets/epl.png" style="width:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							Premiere League</div>
+					</li>
+					<li onclick="showLeague('spain-la-liga')" style="display: flex;" class="mb-3">
+						<img src="assets/laliga.png" style="width:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							La Liga</div>
+					</li>
+					<li onclick="showLeague('italy-serie-a')" style="display: flex;" class="mb-3">
+						<img src="assets/seriea.png" style="width:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							Series A</div>
+					</li>
+					<li onclick="showLeague('germany-bundesliga')" style="display: flex;" class="mb-3">
+						<img src="assets/bundesliga.png" style="width:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							Bundesliga</div>
+					</li>
+					<li onclick="showLeague('france-ligue-1')" style="display: flex;" class="mb-3">
+						<img src="assets/ligue1A.png" style="width:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							Ligue 1</div>
+					</li>
+					<li onclick="showLeague('singapore-premier-league')" style="display: flex;" class="mb-3">
+						<img src="assets/163.png" style="width:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							Premier League</div>
+					</li>
+					<li onclick="showLeague('indonesia-liga-1')" style="display: flex;" class="mb-3">
+						<img src="assets/89.png" style="width:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							Indonesia League</div>
+					</li>
+					<li style="display: flex;" class="mb-3">
+						<img src="assets/playIcon-min.png" style="width:30px; height:30px;">
+						<div
+							style="color: black;display: flex;justify-content: center;flex-direction: column;margin-left: 10px;">
+							<a href="video.html">Video Highlight</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		-->
+
+	</div>
+	<script type="text/javascript">
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			$('#myTopnav').toggleClass('responsive');
+		}
+		var showLeague = function (param) {
+			var token = "MzI4NzdfMTY2ODQxMTM3NF8zYmUzYWViYzNkYWE4NTIxMjU4MjVkNmU0NWUwNzYwZjJiN2RkZDE3";
+			$('#content iframe').attr('src', 'https://www.scorebat.com/embed/competition/' + param + '/?token=' + token);
+		}
+	</script>
+</body>
+
+</html>
